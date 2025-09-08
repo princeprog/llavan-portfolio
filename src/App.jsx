@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import profileImage from "./assets/images/profile.jpg";
 import aboutImage from "./assets/images/about.jpg";
+import cinecityImage from "./assets/images/cinecity.png";
 
 
 export default function App() {
@@ -87,11 +88,11 @@ export default function App() {
 
   const projects = [
     {
-      title: "Enterprise E-Commerce Platform",
+      title: "Cinecity - Movie Booking Platform",
       description:
         "Built a complete e-commerce solution that increased client's online sales by 300%. Features include inventory management, payment processing, and real-time analytics.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "Spring Boot", "MySQL", "Stripe API"],
+      image: cinecityImage,
+      technologies: ["React", "Spring Boot", "MySQL", "Rest API"],
       results: "300% increase in sales, 50% faster load times",
       github: "#",
       live: "#",
