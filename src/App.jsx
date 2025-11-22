@@ -24,6 +24,9 @@ import {
 import profileImage from "./assets/images/profile.jpg";
 import aboutImage from "./assets/images/about.jpg";
 import cinecityImage from "./assets/images/cinecity.png";
+import startupsphereImage from "./assets/images/startupsphere.jpg";
+import notesappImage from "./assets/images/notesapp.jpg";
+import pachImage from "./assets/images/pach.jpg";
 
 
 export default function App() {
@@ -52,23 +55,23 @@ export default function App() {
       icon: <Globe className="w-8 h-8" />,
       title: "Full Stack Web Development",
       description:
-        "End-to-end web applications that drive business growth and user engagement.",
+        "Modern web applications built with cutting-edge technologies and best practices.",
       features: [
         "Custom Web Applications",
-        "E-commerce Solutions",
-        "Admin Dashboards",
+        "Responsive Websites",
+        "Progressive Web Apps",
         "API Development",
       ],
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Responsive Design",
+      title: "Frontend Development",
       description:
-        "Mobile-first designs that work flawlessly across all devices and screen sizes.",
+        "Interactive and responsive user interfaces that deliver exceptional user experiences.",
       features: [
-        "Mobile Optimization",
-        "Cross-Browser Support",
-        "UI/UX Design",
+        "React Applications",
+        "Mobile-First Design",
+        "UI/UX Implementation",
         "Performance Optimization",
       ],
     },
@@ -76,57 +79,57 @@ export default function App() {
       icon: <Database className="w-8 h-8" />,
       title: "Backend & Database",
       description:
-        "Robust server-side solutions with secure and scalable database architecture.",
+        "Scalable server-side solutions with efficient database management and architecture.",
       features: [
         "RESTful APIs",
         "Database Design",
-        "Server Architecture",
-        "Security Implementation",
+        "Spring Boot Applications",
+        "Secure Authentication",
       ],
     },
   ];
 
   const projects = [
     {
-      title: "Cinecity - Movie Booking Platform",
+      title: "Startupsphere - Ecosystem Mapping Platform",
       description:
-        "Built a complete e-commerce solution that increased client's online sales by 300%. Features include inventory management, payment processing, and real-time analytics.",
+        "A comprehensive platform for mapping and visualizing startup ecosystems. Features interactive network graphs, stakeholder analysis, and real-time collaboration tools for tracking startup communities and their connections.",
+      image: startupsphereImage,
+      technologies: ["React.js", "Spring Boot", "MySQL", "Mapbox"],
+      results: "Dynamic ecosystem visualization with network analytics",
+      github: "https://github.com/princeprog/startupspherev2-frontend",
+      live: "https://startupsphere-azure.vercel.app/",
+      featured: true,
+    },
+    {
+      title: "Cinecity - Cinema Booking Management System",
+      description:
+        "A comprehensive movie booking platform with seat selection, payment integration, and user management. Built as a capstone project demonstrating full-stack development capabilities.",
       image: cinecityImage,
-      technologies: ["React", "Spring Boot", "MySQL", "Rest API"],
-      results: "300% increase in sales, 50% faster load times",
-      github: "#",
+      technologies: ["React", "Spring Boot", "MySQL", "REST API"],
+      results: "Complete booking system with admin dashboard",
+      github: "https://github.com/felixjseph/IT342-CineCity",
       live: "#",
       featured: true,
     },
     {
-      title: "Healthcare Management System",
+      title: "Notes App with Wallet Integration",
       description:
-        "Developed a comprehensive patient management system for a medical clinic, streamlining appointments and reducing administrative overhead by 60%.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "Django", "MySQL", "REST API"],
-      results: "60% reduction in admin overhead",
-      github: "#",
+        "Decentralized notes application with blockchain wallet integration. Features secure note storage, cryptocurrency transactions, and Web3 authentication for a seamless blockchain-powered note-taking experience.",
+      image: notesappImage,
+      technologies: ["React.js", "Spring Boot", "Blockchain", "Lace", "Blockfrost"],
+      results: "Blockchain-powered note management with crypto wallet support",
+      github: "https://github.com/princeprog/CSIT360-NotesApp",
       live: "#",
       featured: true,
     },
     {
-      title: "Real Estate CRM Platform",
+      title: "Pach Drugmart - Pharmacy Management System",
       description:
-        "Custom CRM solution that helped real estate agents manage 500+ properties and increased lead conversion by 45%.",
-      image: "/api/placeholder/600/400",
-      technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
-      results: "45% increase in lead conversion",
-      github: "#",
-      live: "#",
-      featured: false,
-    },
-    {
-      title: "Restaurant Management System",
-      description:
-        "Full-featured restaurant POS and management system with online ordering, inventory tracking, and staff management.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "Spring Boot", "MySQL"],
-      results: "40% faster order processing",
+        "Comprehensive pharmacy management system for inventory control, prescription processing, and sales tracking. Features include medicine stock management, customer records, and automated billing system.",
+      image: pachImage,
+      technologies: ["React", "Spring Boot", "MySQL", "REST API"],
+      results: "Efficient pharmacy operations and inventory management",
       github: "#",
       live: "#",
       featured: false,
@@ -177,47 +180,47 @@ export default function App() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      position: "CEO, TechStart Inc.",
+      name: "Prof. Maria Santos",
+      position: "Thesis Adviser, University IT Department",
       content:
-        "Al Prince delivered an exceptional e-commerce platform that transformed our business. Our sales increased by 300% within the first quarter!",
+        "Al Prince consistently demonstrates exceptional technical skills and dedication. His capstone project showcased advanced full-stack development capabilities and problem-solving abilities.",
       rating: 5,
     },
     {
-      name: "Michael Chen",
-      position: "Operations Manager, HealthCare Plus",
+      name: "John Reyes",
+      position: "Project Client, Local Business Owner",
       content:
-        "The healthcare management system Al Prince built for us reduced our administrative overhead by 60%. Highly professional and reliable.",
+        "Working with Al Prince on our business website was a great experience. He delivered a professional, functional solution that exceeded our expectations.",
       rating: 5,
     },
     {
-      name: "Emily Rodriguez",
-      position: "Founder, Local Bistro",
+      name: "Dr. Robert Chen",
+      position: "Professor, Software Engineering",
       content:
-        "Our restaurant management system has streamlined everything. Order processing is 40% faster and customer satisfaction is through the roof!",
+        "One of the most dedicated students I've had. Al Prince shows strong aptitude for both frontend and backend development with clean, maintainable code.",
       rating: 5,
     },
   ];
 
   const stats = [
     {
-      number: "50+",
+      number: "4",
       label: "Projects Completed",
       icon: <Trophy className="w-6 h-6" />,
     },
     {
-      number: "30+",
-      label: "Happy Clients",
+      number: "4th Year",
+      label: "BSIT Student",
       icon: <Users className="w-6 h-6" />,
     },
     {
-      number: "5+",
-      label: "Years Experience",
+      number: "3+",
+      label: "Years Coding",
       icon: <Target className="w-6 h-6" />,
     },
     {
-      number: "98%",
-      label: "Client Satisfaction",
+      number: "A+",
+      label: "Academic Standing",
       icon: <Star className="w-6 h-6" />,
     },
   ];
@@ -251,7 +254,6 @@ export default function App() {
                 "Services",
                 "Projects",
                 "Skills",
-                "Testimonials",
                 "Contact",
               ].map((item) => (
                 <button
@@ -285,7 +287,6 @@ export default function App() {
                 "Services",
                 "Projects",
                 "Skills",
-                "Testimonials",
                 "Contact",
               ].map((item) => (
                 <button
@@ -333,27 +334,21 @@ export default function App() {
 
           {/* Title and Tagline */}
           <div className="text-xl md:text-2xl text-gray-700 mb-2 font-semibold">
-            Full Stack Developer
+            Full Stack Developer | BSIT Student
           </div>
           <div className="text-base md:text-lg text-blue-600 mb-6 font-medium">
-            Turning Ideas Into Profitable Digital Solutions
+            Building Modern Web Solutions Through Innovation & Learning
           </div>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            I build{" "}
+            4th year BSIT student passionate about creating{" "}
             <span className="font-semibold text-blue-600">
-              high-performance web applications
+              innovative web applications
             </span>{" "}
-            that drive business growth. From concept to deployment, I deliver
-            solutions that{" "}
-            <span className="font-semibold text-green-600">
-              increase revenue
-            </span>{" "}
-            and
+            using modern technologies. Dedicated to continuous learning and delivering{" "}
             <span className="font-semibold text-purple-600">
-              {" "}
-              enhance user experience
+              high-quality solutions
             </span>
             .
           </p>
@@ -427,58 +422,60 @@ export default function App() {
                 className="rounded-lg shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-xl">
-                <div className="text-2xl font-bold">5+</div>
-                <div className="text-sm">Years Experience</div>
+                <div className="text-2xl font-bold">4th Year</div>
+                <div className="text-sm">BSIT Student</div>
               </div>
             </div>
 
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Results-Driven Development
+                  Passionate About Technology
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  With over 5 years of experience in full-stack development,
-                  I've helped 30+ businesses transform their ideas into
-                  successful digital products. My focus is always on creating
-                  solutions that not only work perfectly but also drive real
-                  business growth.
+                  As a 4th year Bachelor of Science in Information Technology student,
+                  I combine academic excellence with practical development experience.
+                  My focus is on creating functional, user-friendly applications while
+                  continuously expanding my technical skills and knowledge in modern
+                  web development.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 gap-4">
                 {[
-                  "✅ Custom solutions tailored to your business needs",
-                  "✅ Clean, maintainable, and scalable code",
-                  "✅ Mobile-first responsive design approach",
-                  "✅ SEO optimization and performance tuning",
-                  "✅ Ongoing support and maintenance",
-                  "✅ On-time delivery and transparent communication",
+                  "Strong foundation in full-stack development",
+                  "Proficient in modern frameworks and tools",
+                  "Responsive and mobile-first design approach",
+                  "Clean, well-documented code practices",
+                  "Active learner and quick to adapt",
+                  "Strong problem-solving and analytical skills",
                 ].map((point, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">
-                      {point.replace("✅ ", "")}
-                    </span>
+                    <span className="text-gray-700">{point}</span>
                   </div>
                 ))}
               </div>
 
               <div className="flex space-x-6 pt-4">
                 <a
-                  href="#"
+                  href="https://github.com/princeprog"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
                 >
                   <Github size={28} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/alprince-llavan-34952728a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
                 >
                   <Linkedin size={28} />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:alprincellavan2019@gmail.com"
                   className="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
                 >
                   <Mail size={28} />
@@ -537,12 +534,12 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Success Stories
+              Academic & Personal Projects
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real projects, real results. See how I've helped businesses
-              achieve their goals through innovative development.
+              Real projects demonstrating technical proficiency and creative problem-solving
+              developed through coursework and personal initiatives.
             </p>
           </div>
 
@@ -662,62 +659,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              What Clients Say
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don't just take my word for it – hear from the businesses I've
-              helped transform
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12 shadow-lg">
-              <div className="text-center">
-                <div className="flex justify-center mb-4">
-                  {[...Array(testimonials[currentTestimonial].rating)].map(
-                    (_, i) => (
-                      <Star
-                        key={i}
-                        className="w-6 h-6 text-yellow-400 fill-current"
-                      />
-                    )
-                  )}
-                </div>
-                <blockquote className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed italic">
-                  "{testimonials[currentTestimonial].content}"
-                </blockquote>
-                <div>
-                  <div className="font-bold text-lg text-gray-900">
-                    {testimonials[currentTestimonial].name}
-                  </div>
-                  <div className="text-blue-600 font-medium">
-                    {testimonials[currentTestimonial].position}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex justify-center mt-8 space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                    index === currentTestimonial ? "bg-blue-600" : "bg-gray-300"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section
         id="contact"
@@ -746,27 +687,27 @@ export default function App() {
                   <Mail className="mr-4 text-blue-400" size={24} />
                   <div>
                     <div className="font-semibold">Email</div>
-                    <span className="text-gray-300">
-                      alprince.llavan@email.com
-                    </span>
+                    <a href="mailto:alprincellavan2019@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors">
+                      alprincellavan2019@gmail.com
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Github className="mr-4 text-blue-400" size={24} />
                   <div>
                     <div className="font-semibold">GitHub</div>
-                    <span className="text-gray-300">
-                      github.com/alprincellavan
-                    </span>
+                    <a href="https://github.com/princeprog" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                      github.com/princeprog
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Linkedin className="mr-4 text-blue-400" size={24} />
                   <div>
                     <div className="font-semibold">LinkedIn</div>
-                    <span className="text-gray-300">
-                      linkedin.com/in/alprincellavan
-                    </span>
+                    <a href="https://www.linkedin.com/in/alprince-llavan-34952728a/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                      linkedin.com/in/alprince-llavan
+                    </a>
                   </div>
                 </div>
               </div>
@@ -864,25 +805,29 @@ export default function App() {
                 LLAVA<span className="text-blue-500">N</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
-                Full Stack Developer specializing in creating high-performance
-                web applications that drive business growth and enhance user
-                experience.
+                4th Year BSIT Student specializing in full-stack web development.
+                Passionate about creating innovative solutions and continuously
+                learning new technologies.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://github.com/princeprog"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110"
                 >
                   <Github size={24} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/alprince-llavan-34952728a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110"
                 >
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:alprincellavan2019@gmail.com"
                   className="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110"
                 >
                   <Mail size={24} />
@@ -957,7 +902,7 @@ export default function App() {
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
             <p>
-              &copy; 2024 Al Prince Llavan. All rights reserved. Built with
+              &copy; 2024 Al Prince Llavan. 4th Year BSIT Student. Built with
               React & Tailwind CSS
             </p>
           </div>
